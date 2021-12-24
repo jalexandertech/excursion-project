@@ -24,6 +24,8 @@ a{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    border-bottom: 1px solid #EB892E;
+    padding: 15px;
 }
 
 .navigation ul {
@@ -38,30 +40,75 @@ a{
     font-weight: 700;
 }
 
+.navigation li a:hover{
+    color: #000;
+}
+
 .logo img{
     display: block;
-    height:auto;
-    width: 360px;
+    width: 300px;
 }
 
 
 /* Main Styles */
 
-.container {
+.wrapper{
+    margin: 25px 10px;
+}
+
+.hero-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 25px;
+    height: 500px;
 }
 
-.container .hero-title {
+.hero-container .hero-title {
     font-size: 25px;
     font-weight: 500;
     width: 50%;
     letter-spacing: 2px;
     line-height: 1.5;
+    margin: auto;
 }
 
 .hero-title h1{
     padding: 50px 25px;
+    text-align: center;
+}
+
+.img-container img{
+    width: 100%;
+    display: block;
+}
+
+.hero-video{
+    text-align: center;
+    background-color: #000;
+    padding: 15px 25px;
+    border-radius: 40px;
+}
+
+.hero-video video{
+    height: 380px;
+}
+.hero-video h2{
+    color: #EB892E;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-video p{
+    color: #ffffff;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
+    color:#ffffff ;
 }
