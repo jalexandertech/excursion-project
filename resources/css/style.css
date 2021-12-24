@@ -1,0 +1,67 @@
+/* Universal Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body{
+    max-width: 100%;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #EB892E;
+}
+
+
+/* Navigation Styles */
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.navigation ul {
+    margin: auto 0;
+}
+.navigation li {
+    list-style: none;
+    display: inline;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 25px;
+    font-weight: 700;
+}
+
+.logo img{
+    display: block;
+    height:auto;
+    width: 360px;
+}
+
+
+/* Main Styles */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.container .hero-title {
+    font-size: 25px;
+    font-weight: 500;
+    width: 50%;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.hero-title h1{
+    padding: 50px 25px;
+}
