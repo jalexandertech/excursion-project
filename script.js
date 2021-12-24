@@ -1,1 +1,0 @@
-// Validate the email address
