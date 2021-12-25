@@ -22,7 +22,7 @@ a{
 
 .navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     border-bottom: 1px solid #EB892E;
     padding: 15px;
@@ -36,7 +36,7 @@ a{
     display: inline;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-left: 25px;
+    margin-left: 15px;
     font-weight: 700;
 }
 
@@ -49,6 +49,15 @@ a{
     width: 300px;
 }
 
+@media only screen and (max-width:600px) {
+    .navigation {
+        flex-direction: column;
+        place-items: center;
+    }
+    .navigation ul{
+        margin-top: 10px;
+    }
+}
 
 /* Main Styles */
 
@@ -62,6 +71,7 @@ a{
     justify-content: space-evenly;
     height: 500px;
 }
+
 
 .hero-container .hero-title {
     font-size: 25px;
@@ -104,6 +114,23 @@ a{
     color: #ffffff;
 }
 
+@media only screen and (max-width: 900px) {
+    .hero-container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-container .hero-title{
+        font-size: 15px;
+        height: auto;
+        width: 100%;
+    }
+
+    .hero-video video{
+        height: 400px;
+    }
+}
+
 /* Footer Styles */
 
 footer {
@@ -123,4 +150,10 @@ footer .coming-soon{
 .copyright{
     font-size: 16px;
     padding: 25px;
+}
+
+@media only screen and (max-width:660px) {
+    footer .coming-soon {
+       font-size: 15px;
+    }
 }
